@@ -1,0 +1,210 @@
+{
+  "admin": {
+    "id": 1,
+    "username": "admin",
+    "password": "admin",
+    "name": "Admin"
+  },
+  "employees": [
+    {
+      "id": 1695400283558,
+      "username": "roopesh4p5",
+      "password": "1234qwer",
+      "name": "Roopesh",
+      "leave": [
+        {
+          "startDate": "2023-09-28",
+          "endDate": "2023-09-30",
+          "reason": "Mangalore",
+          "status": "pending",
+          "id": 1695400354574
+        },
+        {
+          "startDate": "2023-09-22",
+          "endDate": "2023-09-22",
+          "reason": "Sick leave",
+          "status": "approved",
+          "id": 1695400426251
+        },
+        {
+          "startDate": "2023-09-24",
+          "endDate": "2023-09-25",
+          "reason": "Auditing",
+          "status": "rejected",
+          "id": 1695400454456
+        },
+        {
+          "startDate": "2023-09-26",
+          "endDate": "2023-09-26",
+          "reason": "Out of Station",
+          "status": "rejected",
+          "id": 1695400710789
+        },
+        {
+          "startDate": "2023-09-29",
+          "endDate": "2023-09-30",
+          "reason": "College visit",
+          "status": "approved",
+          "id": 1695400731139
+        }
+      ]
+    },
+    {
+      "id": 1695400572833,
+      "username": "uday4p5",
+      "password": "1234qwer",
+      "name": "Uday",
+      "leave": [
+        {
+          "startDate": "2023-10-01",
+          "endDate": "2023-10-04",
+          "reason": "exams",
+          "status": "approved",
+          "id": 1695400619637
+        },
+        {
+          "startDate": "2023-09-23",
+          "endDate": "2023-09-23",
+          "reason": "kashmir trip",
+          "status": "rejected",
+          "id": 1695400645982
+        },
+        {
+          "startDate": "2023-09-29",
+          "endDate": "2023-10-08",
+          "reason": "out of station\n",
+          "status": "rejected",
+          "id": 1695401076480
+        },
+        {
+          "startDate": "2023-09-30",
+          "endDate": "2023-10-01",
+          "reason": "auditing",
+          "status": "approved",
+          "id": 1695401122756
+        }
+      ]
+    },
+    {
+      "id": 1695442922826,
+      "username": "kaushik4p5",
+      "password": "1234qwer",
+      "name": "Kaushik",
+      "leave": []
+    },
+    {
+      "id": 1695446214606,
+      "username": "hjb",
+      "password": "hjb",
+      "name": "sfkn",
+      "leave": []
+    },
+    {
+      "id": 1695446235199,
+      "username": "dvkb",
+      "password": "dnkv",
+      "name": "ckjb",
+      "leave": []
+    },
+    {
+      "id": 1695446240968,
+      "username": "djkcb",
+      "password": "lkndv",
+      "name": "scb",
+      "leave": []
+    },
+    {
+      "id": 1695446246309,
+      "username": "dvjb",
+      "password": "clvkn",
+      "name": "ckvb",
+      "leave": []
+    },
+    {
+      "id": 1695446321412,
+      "username": "dscc",
+      "password": "csc",
+      "name": "sf",
+      "leave": []
+    },
+    {
+      "id": 1695446325633,
+      "username": "dc",
+      "password": "cs",
+      "name": "sdfq",
+      "leave": []
+    },
+    {
+      "id": 1695446330338,
+      "username": "cdc",
+      "password": "cdc",
+      "name": "fcv",
+      "leave": []
+    },
+    {
+      "id": 1695446334210,
+      "username": "dsf",
+      "password": "csc",
+      "name": "sdf",
+      "leave": []
+    },
+    {
+      "id": 1695446338726,
+      "username": "ccvd",
+      "password": "cs",
+      "name": "dv",
+      "leave": []
+    },
+    {
+      "id": 1695446345838,
+      "username": "CDSCF",
+      "password": "CS",
+      "name": "SFV",
+      "leave": []
+    },
+    {
+      "id": 1695446352524,
+      "username": "VDFQ",
+      "password": " b",
+      "name": "SF",
+      "leave": []
+    },
+    {
+      "id": 1695446358366,
+      "username": " dv",
+      "password": "fge",
+      "name": "fba",
+      "leave": []
+    },
+    {
+      "id": 1695615107051,
+      "username": "user12",
+      "password": "user12",
+      "name": "user",
+      "leave": [
+        {
+          "startDate": "2023-09-29",
+          "endDate": "2023-10-04",
+          "reason": "mangalore",
+          "status": "approved",
+          "id": 1695615256622
+        },
+        {
+          "startDate": "2023-10-06",
+          "endDate": "2023-10-29",
+          "reason": "long leave",
+          "status": "rejected",
+          "id": 1695615285577
+        },
+        {
+          "startDate": "2023-09-29",
+          "endDate": "2023-10-05",
+          "reason": "chikmangalore",
+          "status": "pending",
+          "id": 1695615312150
+        }
+      ]
+    }
+  ],
+  "holidays": []
+}

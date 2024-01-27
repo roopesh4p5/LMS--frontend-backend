@@ -1,0 +1,29 @@
+<nav class="navbar">
+    <a class="navbar-brand" [routerLink]="getDashboardLink()" *ngIf="isLoggedIn()">
+      Leave Management System
+    </a>
+    <a class="navbar-brand" [routerLink]="'/'" *ngIf="!isLoggedIn()">
+      Leave Management System
+    </a>
+    <ul>
+     
+        <!-- Display additional buttons based on user role -->
+        <button class="admin-button" routerLink="/admindashboard/adduser" *ngIf="isAdmin && isLoggedIn()">Add-Employee</button>
+        <button class="admin-button" routerLink="/admindashboard/leaveapproval" *ngIf="isAdmin && isLoggedIn()">Leave-Approval</button>
+        <button class="admin-button" routerLink="/admindashboard/leavedetails" *ngIf="isAdmin && isLoggedIn()">Approved-Leaves</button>
+        <button class="user-button" routerLink="/userdashboard/applyleave" *ngIf="isUser && isLoggedIn()">Apply Leave</button>
+        <button class="user-button" routerLink="/userdashboard/myleave" *ngIf="isUser && isLoggedIn()">My Leaves</button>
+    
+    </ul>
+    <ul class="navbar-nav">
+      <!-- Display buttons based on user role -->
+      <li class="nav-item" *ngIf="!isLoggedIn()">
+        <button class="login-button" routerLink="/login">Login</button>
+      </li>
+      <li class="nav-item" *ngIf="isLoggedIn()">
+        <span class="nav-link">Welcome {{ getUsername() }} </span>
+        <button class="logout-button" (click)="logout()">Logout</button>
+      </li>
+    </ul>
+  </nav>
+  

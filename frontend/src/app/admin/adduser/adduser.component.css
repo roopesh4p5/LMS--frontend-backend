@@ -1,0 +1,54 @@
+/* Style for the "Add User" container */
+.add-user-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: auto; /* Make the container cover the entire viewport height */
+    width: 40vw; /* Make the container cover 40% of the viewport width */
+    margin: 0 auto; /* Center horizontally within its parent */
+    background-color: #f2f2f2; /* Background color */
+    border-radius: 10px; /* Add border radius for a rounded look */
+    padding: 20px; /* Add some padding inside the container */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Add a box shadow for a card-like effect */
+    margin-top: 20px;
+
+  }
+  
+  /* Style for form elements */
+  .add-user-container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  
+  .add-user-container label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .add-user-container input {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+  }
+  
+  .add-user-container button {
+    background-color: #007bff; /* Button background color */
+    color: #fff; /* Button text color */
+    padding: 10px 20px;
+    border: none;
+    width: 50%;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .add-user-container button:hover {
+    background-color: #0056b3; /* Hover color */
+  }
+  

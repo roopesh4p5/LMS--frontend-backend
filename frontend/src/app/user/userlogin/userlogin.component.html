@@ -1,0 +1,18 @@
+<app-navbar></app-navbar>
+<div class="container" (click)="toggleClass()">
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="center">
+      <h2>Login</h2>
+      <form (ngSubmit)="onSubmit()">
+        <input type="text" id="username" name="username" placeholder="Username" autocomplete="nope" [(ngModel)]="formData.username" required>
+  
+        <input type="password" id="password" name="password" placeholder="Password" [(ngModel)]="formData.password" required>
+  
+        <!-- Use *ngIf to conditionally display the button -->
+        <div class="button-container" *ngIf="!isLoggedIn">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </div>
+</div>

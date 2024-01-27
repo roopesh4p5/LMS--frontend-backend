@@ -1,0 +1,32 @@
+<app-navbar></app-navbar>
+<div>
+    <h2>Leave Request Letter</h2>
+    
+    <form (ngSubmit)="submitLeaveRequest()">
+      <div>
+        <p>I, {{ username }}, will be taking leave from
+          <input type="date" id="startDate" name="startDate" [(ngModel)]="leave.startDate" required 
+                 [min]="getCurrentDate()">
+          <span> to </span>
+          <input type="date" id="endDate" name="endDate" [(ngModel)]="leave.endDate" required 
+                 [min]="leave.startDate">
+          due to the following reason:
+        </p>
+      </div>
+      <div>
+        <label for="reason">Reason:</label>
+        <textarea id="reason" name="reason" [(ngModel)]="leave.reason" required></textarea>
+      </div>
+      
+      <p>During my absence, I will ensure that my responsibilities are well-handled by my colleagues at Pace Wisdom Solutions.</p>
+      
+      <p>Thank you for your understanding and support during this time.</p>
+      <div class="leftt">
+          <p>Sincerely,</p>
+          <p>{{ username }}</p>
+        </div>
+        <button type="submit">Submit Leave Request</button>
+      </form>
+</div>
+
+<app-footer></app-footer>

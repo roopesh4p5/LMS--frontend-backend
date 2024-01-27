@@ -1,0 +1,35 @@
+<app-navbar></app-navbar>
+<div class="leave-approval-container">
+  <h2>My Leave</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Start Date</th>
+        <th>End Date</th>
+        <th>Days</th>
+        <th>Reason</th>
+        <th>Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let user of leaveRequests; let i = index">
+        <ng-container *ngIf="user.leave.length > 0">
+          <ng-container *ngIf="user.id == myid">
+            <tr *ngFor="let leave of user.leave">
+              <td>{{ leave.startDate }}</td>
+              <td>{{ leave.endDate }}</td>
+              <td>{{ calculateTotalLeaveDays(leave.startDate, leave.endDate) }}</td>
+              <td>{{ leave.reason }}</td>
+              <td [ngClass]="getStatusColorClass(leave.status)">{{ leave.status }}</td>
+              <!-- Calculate and display total leave days using the function -->
+            </tr>
+          </ng-container>
+        </ng-container>
+      </ng-container>
+      <tr *ngIf="leaveRequests.length === 0">
+        <td colspan="6">No leave details available.</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<app-footer></app-footer>

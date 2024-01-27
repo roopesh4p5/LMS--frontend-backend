@@ -1,0 +1,54 @@
+/* Style the container */
+.leave-approval-container {
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+  }
+  
+  /* Style the table */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  /* Style the table header */
+  th {
+    background-color: #f2f2f2;
+    padding: 10px;
+    border: 1px solid #ddd;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Style the table cells */
+  td {
+    padding: 10px 0;
+    border: 1px solid #ddd;
+    text-align: center;
+  }
+  
+  /* Style the action buttons */
+  button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-weight: bold;
+    padding: 5px;
+  }
+  .apr{
+    padding-right:20px;
+    color: rgb(16, 190, 16);
+  }
+  .rej{
+    color: red;
+    padding-left:20px;
+
+  }
+  button:hover {
+    color: rgb(2, 46, 46);
+  }
+  
+
+  

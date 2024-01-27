@@ -1,0 +1,131 @@
+/* Style the dashboard container to display items side by side */
+.dashboard-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Align items to the top */
+  position: relative; /* Set position to relative for the parent container */
+
+}
+.admin {
+  font-weight: bolder;
+}
+.msg{
+  font-size: 24px;
+  margin-bottom: 100px;
+}
+/* Style the Add Holiday form */
+.add-holiday {
+  flex-basis: calc(80vw - 20px); /* Calculate width, minus space for the sidebar */
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the Employee List container */
+.employee-list-container {
+  flex-basis: 20vw; /* Sidebar width */
+  padding: 20px;
+  position: absolute; /* Set position to absolute */
+  top: 0; /* Align to the top */
+  right: 0; /* Align to the right */
+  width: 20vw;
+  max-height: 80vh; /* Set a maximum height with vertical scroll if content overflows */
+  overflow-y: auto; /* Enable vertical scroll if content overflows */
+}
+
+/* Style the Employee List */
+.employee-list-container h2 {
+  margin-top: 0; /* Remove default margin */
+  
+}
+
+/* Style the form container */
+div {
+  text-align: center;
+  padding: 20px;
+}
+
+/* Style the heading */
+h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Style the form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Style the input fields */
+input[type="text"],
+input[type="date"] {
+  border: none; /* Remove borders */
+  border-bottom: 2px solid #007BFF; /* Add an underline */
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+  outline: none; /* Remove the outline on focus */
+}
+
+/* Style the button */
+button {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Style the button on hover */
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Style the error message */
+.alert {
+  color: red;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* Style the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+/* Style the table header */
+th {
+  background-color: #007BFF;
+  color: white;
+  padding: 10px;
+}
+
+/* Style the table rows */
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Style the table cells */
+td {
+  padding: 10px;
+}
+
+/* Style the delete button */
+button.delete-button {
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+/* Style the delete button on hover */
+button.delete-button:hover {
+  background-color: #c82333;
+}

@@ -1,0 +1,25 @@
+<app-navbar></app-navbar>
+
+<div class="dashboard-container">
+  <div class="user-dashboard">
+    <h1>Welcome to the User Dashboard</h1>
+
+    <!-- Display tomorrow's holidays -->
+    <div *ngIf="tomorrowHolidays.length > 0" class="notifications">
+      <h3>Tomorrow's Holidays:</h3>
+      <ul>
+        <li *ngFor="let holiday of tomorrowHolidays">
+          <p>
+            The office will be closed tomorrow ({{ holiday.date }}) due to
+            {{ holiday.name }}
+          </p>
+        </li>
+      </ul>
+    </div>
+
+    <div *ngIf="tomorrowHolidays.length === 0" class="notifications">
+      <p>No holidays are scheduled for tomorrow.</p>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="leave-approval-container">
+    <h2>Approved Leave</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Username</th>
+          <th>Start Date</th>
+          <th>End Date</th>
+          <th>Days</th>
+          <th>Reason</th>
+          <th>Status</th>
+         
+        </tr>
+      </thead>
+      <tbody>
+        <ng-container *ngFor="let user of leaveRequests">
+          <ng-container *ngIf="user.leave.length > 0">
+              <tr *ngFor="let leave of user.leave">
+                <ng-container *ngIf="leave.status=='approved'" >
+                <td>{{ user.username }}</td>
+                <td>{{ leave.startDate }}</td>
+                <td>{{ leave.endDate }}</td>
+                <td>{{ calculateTotalLeaveDays(leave.startDate, leave.endDate) }}</td>
+                <td>{{ leave.reason }}</td>
+                <td>{{ leave.status }}</td>
+            </ng-container>
+              </tr>
+          </ng-container>
+        </ng-container>
+        <tr *ngIf="leaveRequests.length === 0">
+          <td colspan="5">No leave details available.</td>
+        </tr>
+      </tbody>
+    </table>
+</div>
+<app-footer></app-footer>

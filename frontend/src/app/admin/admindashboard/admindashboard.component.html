@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="dashboard-container">
+  <div class="add-holiday">
+    <h1 class="admin">Hey Admin</h1>
+    <p class="msg">Welcome to the Leave Management System. <br> You can add emergency holidays and manage employee leave requests from here.</p>
+
+    <div>
+    <h2>Add Emergency Holiday</h2>
+    <!-- Display the alert if showAlert is true -->
+    <form (submit)="addHoliday()">
+      <p>Due to <input type="text" id="name" name="name" placeholder="Reason" [(ngModel)]="holidayData.name" required>, the office will be closed on <input type="date" id="date" name="date" [(ngModel)]="holidayData.date" required>.</p>
+      <button type="submit">Add Holiday</button>
+    </form>
+  </div>
+</div>
+
+  <div class="employee-list-container">
+    <h2>Employee List</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let employee of employees">
+          <td>{{ employee.name }}</td>
+          <td>
+            <button class="delete-button" (click)="deleteEmployee(employee.id)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<app-footer></app-footer>

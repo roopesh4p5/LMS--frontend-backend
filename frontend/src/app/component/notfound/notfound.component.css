@@ -1,0 +1,23 @@
+.not-found-container {
+    /* background: linear-gradient(to right, #e46569, #ecaf81, #3745b5, #60b8d4); */
+    color: black;
+    text-align: center;
+    padding: 20px;
+    height: 85vh;
+  }
+  
+  h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  a {
+    color: black;
+    text-decoration: underline;
+  }
+  

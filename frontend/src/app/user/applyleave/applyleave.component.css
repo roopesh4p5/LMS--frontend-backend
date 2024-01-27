@@ -1,0 +1,63 @@
+/* Style for the leave request container */
+div {
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 20px;
+    background-color: #fff;
+   
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Style for the form header */
+  h2 {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  /* Style for the paragraph */
+  p {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  /* Style for the date inputs */
+  input[type="date"] {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    width: 150px;
+    font-size: 16px;
+    margin: 0 5px;
+  }
+  .leftt{
+    text-align: right;
+  }
+  /* Style for the reason textarea */
+  textarea {
+    border: none;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    width: 100%;
+    font-size: 16px;
+    padding: 5px;
+  }
+  
+  /* Style for the submit button */
+  button[type="submit"] {
+    background-color:rgb(2, 126, 2);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+  }
+  
+  /* Style for the footer */
+  app-footer {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 14px;
+  }
+  

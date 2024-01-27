@@ -1,0 +1,63 @@
+.navbar {
+    background: linear-gradient(to right, #e46569, #ecaf81, #3745b5, #60b8d4);
+    color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .user-button,
+  .admin-button {
+    font-weight: bold;
+    background-color: transparent; /* Change the button background color */
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 2px;
+    font-size: 14px; /* Adjust the font size */
+    /* You can add more styling as needed */
+  }
+  
+  .user-button:hover,
+  .admin-button:hover {
+    color: #ffb; /* Change the button background color on hover */
+  }
+  
+  .navbar-brand {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+  }
+  
+  .navbar-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .nav-item {
+    margin-right: 20px;
+  }
+  
+  .nav-link {
+    font-size: 14px;
+    margin-right: 20px;
+  }
+  
+  .logout-button,
+  .login-button {
+    background-color: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    margin: 2px;
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c;
+  }
+  
